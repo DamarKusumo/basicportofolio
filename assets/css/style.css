@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Verdana, sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #2d3e50;
+  color: white;
+  padding: 5px;
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  padding-top: 80px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+main aside {
+  inset-inline-start: 0;
+  inset-block: 0;
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 25%;
+}
+
+main aside .card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  background-color: #2d3e50;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 0 3rem;
+  margin: auto;
+  border-radius: 12px;
+  background-color: #2d3e50;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #89b0d9;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile p {
+  margin: 0;
+  font-size: smaller;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  max-width: 150px;
+}
+
+.profile table {
+  margin: auto;
+}
+
+.profile th {
+  text-align: left;
+}
+
+.profile td {
+  padding-left: 1rem;
+}
+
+.profile section {
+  margin-top: 1rem;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.year {
+  margin-top: 0;
+  font-style: italic;
+  color: #2d3e50;
+}
+
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #2d3e50;
+  position: relative;
+  text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+    width: 100%;
+  }
+
+  body header a {
+    font-size: small;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navMob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+
+  .navMob {
+    display: block;
+    overflow: hidden;
+  }
+
+  .navMob #menu {
+    display: none;
+  }
+
+  .navMob a {
+    padding: 14px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .navMob a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
